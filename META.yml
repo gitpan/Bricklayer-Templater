@@ -1,0 +1,50 @@
+---
+name: Bricklayer-Templater
+version: 0.9
+author:
+  - Jeremy Wall
+abstract: pure perl templating engine with few dependencies
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  perl: 5.6
+provides:
+  Bricklayer::Templater:
+    file: ./lib/Bricklayer/Templater.pm
+  Bricklayer::Templater::Handler:
+    file: ./lib/Bricklayer/Templater/Handler.pm
+  Bricklayer::Templater::Parser:
+    file: ./lib/Bricklayer/Templater/Parser.pm
+  Bricklayer::Templater::Sequencer:
+    file: ./lib/Bricklayer/Templater/Sequencer.pm
+  common::arrayitem:
+    file: ./lib/Bricklayer/Templater/default/common/arrayitem.pm
+  common::cgi_env:
+    file: ./lib/Bricklayer/Templater/default/common/cgi_env.pm
+  common::elsehashitem:
+    file: ./lib/Bricklayer/Templater/default/common/elsehashitem.pm
+  common::hashitem:
+    file: ./lib/Bricklayer/Templater/default/common/hashitem.pm
+  common::ifhashitem:
+    file: ./lib/Bricklayer/Templater/default/common/ifhashitem.pm
+  common::include:
+    file: ./lib/Bricklayer/Templater/default/common/include.pm
+  common::item:
+    file: ./lib/Bricklayer/Templater/default/common/item.pm
+  common::object:
+    file: ./lib/Bricklayer/Templater/default/common/object.pm
+  common::row:
+    file: ./lib/Bricklayer/Templater/default/common/row.pm
+  default:
+    file: ./lib/Bricklayer/Templater/default/default.pm
+  text_block:
+    file: ./lib/Bricklayer/Templater/default/text_block.pm
+  util::embed:
+    file: ./lib/Bricklayer/Templater/default/util/embed.pm
+  util::tester:
+    file: ./lib/Bricklayer/Templater/default/util/tester.pm
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
