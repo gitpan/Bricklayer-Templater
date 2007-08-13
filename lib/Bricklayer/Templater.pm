@@ -36,16 +36,16 @@ you can specify different start and end brackets and identifiers (the BK in the 
 =head2 Configuring Templater options
 
 Changing start_bracket for the template objects tags
-C<$t->start_bracket('[');> #default is <
+$t->start_bracket('['); #default is <
 
 Change the end_bracket for the template objects tags
-C<$t->end_bracket(']');> #default is >
+$t->end_bracket(']'); #default is >
 
 Change the identifier for the templater objects tags
-C<$t->identifier('?');> #default is BK
+$t->identifier('?'); #default is BK
 
 Change the template extension
-C<$t->ext('tmpl'); #default is txml
+$t->ext('tmpl'); #default is txml
 
 There are two primary purposes for this configurability. One is to for aesthetic
 reasons, the other is for multipass templating. Multipass templating is possible
@@ -55,22 +55,24 @@ with a different configuration of tags.
 =head2 Running a Template
 
 There are two ways you can run a template. The first and easiest is to call
-C<$t->run_templater('template_name');>  This will look in your working directory
+$t->run_templater('template_name');  This will look in your working directory
 for a template by that name and with the configured extension and then run it.
 
-The template will be stored in C<$t->_page()> or be published with the publish hook 
+The template will be stored in $t->_page() or be published with the publish hook 
 provided by you if you sub classed the engine.
 
 =head2 The publish method.
 
 There is one method you probably want to override if you subclass this engine.
-C<publish()> This method will be called by handlers with their results. If you
+publish() This method will be called by handlers with their results. If you
 don't override it then the default is to append those results to the _page attribute
 of the template object.
 
 =head2 The rest of the API
 
 =cut
+
+$VERSION='0.9.1'
 
 sub new {
     do {carp($_[0]." Requires a working directory"); return; } unless defined $_[2];
@@ -84,18 +86,18 @@ sub new {
     return $obj;
 }
 
-=head3 C<my $file = $t->load_template_file('template_name')>
+=head3 my load_template_file
 
-load_template_file loads a template file from the working directory
+my $file = $t->load_template_file('template_name') loads a template file from the working directory
 there are two ways to specify the template name.
 
 =head4 path/name syntax
 
-C<$t->load_template_file('relative/path/template_name')>
+$t->load_template_file('relative/path/template_name')
 
 =head4 name::space syntax (perl like)
 
-C<$t->load_template_file('name::space::template_name')>
+$t->load_template_file('name::space::template_name')
 
 =cut
 
@@ -130,7 +132,7 @@ sub run_templater {
 	return 1;
 }
 
-=head3 C<$t->run_sequencer($file)>
+=head3 $t->run_sequencer($file)
 
 run_sequencer runs the sequencer on the text in $file. The results 
 of the template run will be stored wherever publish() puts it.
@@ -145,7 +147,7 @@ sub run_sequencer {
 	my $handler_loc = shift || $self->{WD};
 	my $TemplateObj = Bricklayer::Templater::Sequencer->new_sequencer($Template, $tagID);
 	my $ParsedPage = $TemplateObj->return_parsed($self, $Params, $handler_loc);
-	#return $ParsedPage;
+    return;
 }
 
 sub publish {
@@ -154,9 +156,9 @@ sub publish {
 	$self->{_page} .= join('', @_);
 } 
 
-=head3 C<$t->clear()>
+=head3 clear
 
-Clears the contents of C<_page()> it's a convenience method. If you override
+$t->clear() Clears the contents of _page() it's a convenience method. If you override
 the publish method you might want to override this one too if you need it.
 
 =cut
@@ -218,10 +220,6 @@ sub WD {
 
 return 1;
 
-=head1 NOTES
-
-
- 
 =head1 Authors
 
     Jeremy A. Wall <Jeremy@MarzhillStudios.com>
@@ -232,7 +230,7 @@ return 1;
     See http://rt.cpan.org to report and view bugs
 
 =head1 COPYRIGHT
-    (C) Copywright 2007 Jeremy Wall <Jeremy@Marzhillstudios.com>
+    (C) Copyright 2007 Jeremy Wall <Jeremy@Marzhillstudios.com>
 
     This program is free software you can redistribute it and/or modify it under the same terms as Perl itself.
 

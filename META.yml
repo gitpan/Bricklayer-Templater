@@ -1,6 +1,6 @@
 ---
 name: Bricklayer-Templater
-version: 0.9
+version: 0.9.1
 author:
   - Jeremy Wall
 abstract: pure perl templating engine with few dependencies
@@ -12,6 +12,7 @@ requires:
 provides:
   Bricklayer::Templater:
     file: ./lib/Bricklayer/Templater.pm
+    version: 0.9.1
   Bricklayer::Templater::Handler:
     file: ./lib/Bricklayer/Templater/Handler.pm
   Bricklayer::Templater::Parser:
