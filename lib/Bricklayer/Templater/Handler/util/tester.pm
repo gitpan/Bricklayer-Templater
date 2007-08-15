@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------- 
 # 
-# File: text_block.pm
+# File: tester.pm
 # Version: 0.1
 # Author: Jeremy Wall
 # Definition: This is the handler for plain text blocks in a template.
@@ -9,13 +9,13 @@
 #             later on. 
 #
 #--------------------------------------------------------------------------
-package text_block;
+package Bricklayer::Templater::Handler::util::tester;
 use Bricklayer::Templater::Handler;
 use base qw(Bricklayer::Templater::Handler);
 
 sub run {
     
-    return $_[0]->{Token}->{block};   
+    return "tester was here :-)";   
 }
 
 

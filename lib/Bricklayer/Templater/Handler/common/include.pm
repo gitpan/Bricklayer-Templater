@@ -9,7 +9,7 @@
 #             later on. 
 #
 #--------------------------------------------------------------------------
-package common::include;
+package Bricklayer::Templater::Handler::common::include;
 use Bricklayer::Templater::Handler;
 use base qw(Bricklayer::Templater::Handler);
 

@@ -1,4 +1,4 @@
-package common::hashitem;
+package Bricklayer::Templater::Handler::common::hashitem;
 use Bricklayer::Templater::Handler;
 use base qw(Bricklayer::Templater::Handler);
 

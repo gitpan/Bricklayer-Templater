@@ -1,4 +1,4 @@
-package default;
+package Bricklayer::Templater::Handler::default;
 use Bricklayer::Templater::Handler;
 use base qw(Bricklayer::Templater::Handler);
 
