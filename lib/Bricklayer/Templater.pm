@@ -6,7 +6,7 @@ use Carp;
 =head1 NAME 
 
 Bricklayer::Templater - yet another templating system. Pure perl, highly flexible
-with very few dependincies.
+with very few dependencies.
 
 =head1 SYNOPSIS
 
@@ -73,7 +73,7 @@ of the template object.
 
 =cut
 
-$VERSION='0.9.2';
+$VERSION='0.9.3';
 
 sub new {
     do {carp($_[0]." Requires a working directory"); return; } unless defined $_[2];
@@ -109,7 +109,6 @@ sub load_template_file {
 	my $TemplateFile = $self->{WD}."/templates/".$filename;
 	$TemplateFile .= ".$extension";
 	$TemplateFile =~ s/::/\//g; # use double colon to indicate template directory seperators
-    warn "the template file is: $TemplateFile";
 	my $TemplateObj;
 	my $Template;
 	open( TEMPLATE, $TemplateFile )
@@ -153,7 +152,6 @@ sub run_sequencer {
 
 sub publish {
 	$self = shift;
-    warn "called with ".scalar @_." args [", join('|', @_)."]";
 	$self->{_page} .= join('', @_);
 } 
 

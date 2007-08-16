@@ -1,6 +1,6 @@
 ---
 name: Bricklayer-Templater
-version: 0.9.2
+version: 0.9.3
 author:
   - Jeremy Wall
 abstract: pure perl templating engine with few dependencies
@@ -14,40 +14,40 @@ build_requires:
   Test::More: 0.7
 provides:
   Bricklayer::Templater:
-    file: ./lib/Bricklayer/Templater.pm
-    version: 0.9.2
+    file: lib/Bricklayer/Templater.pm
+    version: 0.9.3
   Bricklayer::Templater::Handler:
-    file: ./lib/Bricklayer/Templater/Handler.pm
+    file: lib/Bricklayer/Templater/Handler.pm
   Bricklayer::Templater::Handler::common::arrayitem:
-    file: ./lib/Bricklayer/Templater/Handler/common/arrayitem.pm
+    file: lib/Bricklayer/Templater/Handler/common/arrayitem.pm
   Bricklayer::Templater::Handler::common::cgi_env:
-    file: ./lib/Bricklayer/Templater/Handler/common/cgi_env.pm
+    file: lib/Bricklayer/Templater/Handler/common/cgi_env.pm
   Bricklayer::Templater::Handler::common::elsehashitem:
-    file: ./lib/Bricklayer/Templater/Handler/common/elsehashitem.pm
+    file: lib/Bricklayer/Templater/Handler/common/elsehashitem.pm
   Bricklayer::Templater::Handler::common::hashitem:
-    file: ./lib/Bricklayer/Templater/Handler/common/hashitem.pm
+    file: lib/Bricklayer/Templater/Handler/common/hashitem.pm
   Bricklayer::Templater::Handler::common::ifhashitem:
-    file: ./lib/Bricklayer/Templater/Handler/common/ifhashitem.pm
+    file: lib/Bricklayer/Templater/Handler/common/ifhashitem.pm
   Bricklayer::Templater::Handler::common::include:
-    file: ./lib/Bricklayer/Templater/Handler/common/include.pm
+    file: lib/Bricklayer/Templater/Handler/common/include.pm
   Bricklayer::Templater::Handler::common::item:
-    file: ./lib/Bricklayer/Templater/Handler/common/item.pm
+    file: lib/Bricklayer/Templater/Handler/common/item.pm
   Bricklayer::Templater::Handler::common::object:
-    file: ./lib/Bricklayer/Templater/Handler/common/object.pm
+    file: lib/Bricklayer/Templater/Handler/common/object.pm
   Bricklayer::Templater::Handler::common::row:
-    file: ./lib/Bricklayer/Templater/Handler/common/row.pm
+    file: lib/Bricklayer/Templater/Handler/common/row.pm
   Bricklayer::Templater::Handler::default:
-    file: ./lib/Bricklayer/Templater/Handler/default.pm
+    file: lib/Bricklayer/Templater/Handler/default.pm
   Bricklayer::Templater::Handler::text_block:
-    file: ./lib/Bricklayer/Templater/Handler/text_block.pm
+    file: lib/Bricklayer/Templater/Handler/text_block.pm
   Bricklayer::Templater::Handler::util::embed:
-    file: ./lib/Bricklayer/Templater/Handler/util/embed.pm
+    file: lib/Bricklayer/Templater/Handler/util/embed.pm
   Bricklayer::Templater::Handler::util::tester:
-    file: ./lib/Bricklayer/Templater/Handler/util/tester.pm
+    file: lib/Bricklayer/Templater/Handler/util/tester.pm
   Bricklayer::Templater::Parser:
-    file: ./lib/Bricklayer/Templater/Parser.pm
+    file: lib/Bricklayer/Templater/Parser.pm
   Bricklayer::Templater::Sequencer:
-    file: ./lib/Bricklayer/Templater/Sequencer.pm
+    file: lib/Bricklayer/Templater/Sequencer.pm
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
