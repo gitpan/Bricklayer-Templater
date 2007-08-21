@@ -17,6 +17,18 @@ use Carp;
 
 use Bricklayer::Templater::Parser;
 
+=head1 NAME
+
+Bricklayer::Templater::Sequencer - Internal Module used by L<Bricklayer::Templater>;
+
+=head1 Description
+
+=head1 SEE ALSO
+
+L<Bricklayer::Templater>
+
+=cut
+
 my %handlerCache;
 
 our @ISA = qw(Exporter);
@@ -24,7 +36,7 @@ our @EXPORT = qw(new_sequencer return_parsed);
 
 sub new_sequencer {
     my $Proto = shift;
-    my $TemplateText = shift or die "No template specified";
+    my $TemplateText = shift or confess("No template specified");
     my $tagID = shift;
     my $Class = ref($Proto) || $Proto;
     my @TokenList = parse($TemplateText, $tagID);

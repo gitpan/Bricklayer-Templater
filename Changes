@@ -1,0 +1,106 @@
+Fri Aug 17 07:51:01 CDT 2007  jeremy@marzhillstudios.com
+  * changed error calls and a bugfix
+
+Thu Aug 16 14:15:49 CDT 2007  jeremy@marzhillstudios.com
+  * update version number to 0.9.3
+
+Thu Aug 16 13:57:17 CDT 2007  jeremy@marzhillstudios.com
+  * documentation errors
+
+Thu Aug 16 08:02:34 CDT 2007  jeremy@marzhillstudios.com
+  * Changes to Manfest
+
+Thu Aug 16 07:20:36 CDT 2007  jeremy@marzhillstudios.com
+  * I don't remember
+
+Wed Aug 15 18:09:49 CDT 2007  jeremy@marzhillstudios.com
+  * removed unneeded warnings
+
+Tue Aug 14 20:43:01 CDT 2007  jeremy@marzhillstudios.com
+  * additions to MANIFEST
+
+Tue Aug 14 20:42:10 CDT 2007  jeremy@marzhillstudios.com
+  * spelling fix in description
+
+Tue Aug 14 19:09:55 CDT 2007  jeremy@marzhillstudios.com
+  * upped version to 0.9.1
+
+Tue Aug 14 19:09:18 CDT 2007  jeremy@marzhillstudios.com
+  * removed some superfluous conditionals
+
+Tue Aug 14 19:07:52 CDT 2007  jeremy@marzhillstudios.com
+  * Finish moving the handler namespaces
+
+Tue Aug 14 17:22:03 CDT 2007  jeremy@marzhillstudios.com
+  * moved default handler class to more clear namespace
+
+Tue Aug 14 17:20:46 CDT 2007  jeremy@marzhillstudios.com
+  * changed namespaces of handler files to avoid treading on other namespaces
+
+Tue Aug 14 16:51:02 CDT 2007  jeremy@marzhillstudios.com
+  * moved default handlers to a better location
+
+Mon Aug 13 17:11:03 CDT 2007  jeremy@marzhillstudios.com
+  * new version for Bricklayer::Templater module
+
+Mon Aug 13 10:18:00 CDT 2007  jeremy@marzhillstudios.com
+  * Spelling fixes in the pod
+
+Mon Aug 13 10:12:59 CDT 2007  jeremy@marzhillstudios.com
+  * POD syntax fixes
+
+Sun Aug 12 18:32:19 CDT 2007  jeremy@marzhillstudios.com
+  * removed unneeded handlers
+
+Sun Aug 12 17:51:03 CDT 2007  jeremy@marzhillstudios.com
+  * new test file and changes to the manifest
+
+Sun Aug 12 17:49:58 CDT 2007  jeremy@marzhillstudios.com
+  * added new test file for Bricklayer::Templater::Handler
+
+Sun Aug 12 17:46:23 CDT 2007  jeremy@marzhillstudios.com
+  * code cleanup and directory cleanup for cpan distro
+
+Sun Aug 12 15:34:27 CDT 2007  jeremy@marzhillstudios.com
+  * more cleanup for CPAN
+
+Sun Aug 12 15:33:43 CDT 2007  jeremy@marzhillstudios.com
+  * removed Excess Bricklayer Files
+
+Sun Aug 12 15:28:45 CDT 2007  jeremy@marzhillstudios.com
+  * cleanup tests to make them less dependent on external files
+
+Sun Aug 12 10:22:46 CDT 2007  jeremy@marzhillstudios.com
+  * more cleanup
+
+Sun Aug 12 08:30:41 CDT 2007  jeremy@marzhillstudios.com
+  * no longer want to track Changes file
+
+Sun Aug 12 08:27:22 CDT 2007  jeremy@marzhillstudios.com
+  * added manifest file and moved to lib directory
+
+Sun Aug 12 08:23:46 CDT 2007  jeremy@marzhillstudios.com
+  * more cleanup and added some directory structure
+
+Sun Aug 12 08:20:28 CDT 2007  jeremy@marzhillstudios.com
+  * more distro cleanup
+
+Sun Aug 12 08:16:19 CDT 2007  jeremy@marzhillstudios.com
+  * cleanup for module distribution
+
+Wed Aug  8 17:00:59 CDT 2007  jeremy@marzhillstudios.com
+  * new coverage stats for tests
+
+Wed Aug  8 16:25:28 CDT 2007  jeremy@marzhillstudios.com
+  * Bricklayer::Templater initialization tests and attribute tests
+  Also some of the code to satisfy the tests
+  
+
+Sun Aug  5 12:31:06 CDT 2007  jeremy@marzhillstudios.com
+  * complete subroutine coverage for Bricklayer::Templater namespace
+
+Sun Jul 29 18:08:52 CDT 2007  jeremy@marzhillstudios.com
+  * coverage stats for the bricklayer modules
+
+Sat Jul 28 00:01:56 CDT 2007  jeremy@marzhillstudios.com
+  * Redo of corrupt repository

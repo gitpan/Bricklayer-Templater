@@ -1,6 +1,6 @@
 ---
 name: Bricklayer-Templater
-version: 0.9.3
+version: 0.9.4
 author:
   - Jeremy Wall
 abstract: pure perl templating engine with few dependencies
@@ -8,20 +8,18 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
-  perl: 5.6
-build_requires:
+  Exporter: 0
   Test::MockObject: 1.08
   Test::More: 0.7
+  perl: 5.6
 provides:
   Bricklayer::Templater:
     file: lib/Bricklayer/Templater.pm
-    version: 0.9.3
+    version: 0.9.4
   Bricklayer::Templater::Handler:
     file: lib/Bricklayer/Templater/Handler.pm
   Bricklayer::Templater::Handler::common::arrayitem:
     file: lib/Bricklayer/Templater/Handler/common/arrayitem.pm
-  Bricklayer::Templater::Handler::common::cgi_env:
-    file: lib/Bricklayer/Templater/Handler/common/cgi_env.pm
   Bricklayer::Templater::Handler::common::elsehashitem:
     file: lib/Bricklayer/Templater/Handler/common/elsehashitem.pm
   Bricklayer::Templater::Handler::common::hashitem:
