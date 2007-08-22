@@ -1,3 +1,6 @@
+Build.pl
+Build
+Makefile.pl
 MANIFEST
 README
 t/bricklayer_templater_parser.t
