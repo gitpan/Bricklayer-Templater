@@ -1,3 +1,24 @@
+Wed Aug 22 22:34:18 CDT 2007  jeremy@marzhillstudios.com
+  * fixed some documentation and also the tests
+
+Mon Aug 20 18:39:36 CDT 2007  jeremy@marzhillstudios.com
+  * documentation for Bricklayer::Templater::Sequencer
+
+Mon Aug 20 18:33:01 CDT 2007  jeremy@marzhillstudios.com
+  * Documentation for Bricklayer::Templater::Handler
+
+Mon Aug 20 17:57:09 CDT 2007  jeremy@marzhillstudios.com
+  * META.yml and removed debugging carps from common::object handler
+
+Mon Aug 20 08:00:52 CDT 2007  jeremy@marzhillstudios.com
+  * increase version number
+
+Mon Aug 20 07:57:50 CDT 2007  jeremy@marzhillstudios.com
+  * rewrote handlers to use the newer api
+
+Fri Aug 17 22:14:09 CDT 2007  jeremy@marzhillstudios.com
+  * some bugfixes for parameter passing
+
 Fri Aug 17 07:51:01 CDT 2007  jeremy@marzhillstudios.com
   * changed error calls and a bugfix
 

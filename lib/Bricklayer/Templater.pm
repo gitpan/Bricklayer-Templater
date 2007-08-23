@@ -10,13 +10,13 @@ with very few dependencies.
 
 =head1 SYNOPSIS
 
-    use Bricklayer::Templater::Sequencer;
+    use Bricklayer::Templater;
     use Cwd;
     
     my $cwd = cwd();
     
     # create a new templater with a context object and a working directory
-    my $t = Bricklayer::Templater::Sequencer->new($context, $cwd);
+    my $t = Bricklayer::Templater->new($context, $cwd);
     
     # run the templater on a named template
     $t->run_templater('name_of_template');
@@ -73,7 +73,7 @@ of the template object.
 
 =cut
 
-$VERSION='0.9.4';
+$VERSION='0.9.5';
 
 sub new {
     do {carp($_[0]." Requires a working directory"); return; } unless defined $_[2];
@@ -147,7 +147,7 @@ sub run_sequencer {
 	my $tagID = $self->identifier();
 	my $Params = shift;
 	my $handler_loc = $self->{WD};
-	my $TemplateObj = Bricklayer::Templater::Sequencer->new_sequencer($Template, $tagID);
+	my $TemplateObj = Bricklayer::Templater::Sequencer->new_sequencer($Template, $tagID, $self->start_bracket, $self->end_bracket);
 	my $ParsedPage = $TemplateObj->return_parsed($self, $Params, $handler_loc);
     return;
 }

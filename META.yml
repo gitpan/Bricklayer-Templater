@@ -2,16 +2,17 @@
 name: Bricklayer-Templater
 version: 0.9.4
 author:
-  - Jeremy Wall
-abstract: pure perl templating engine with few dependencies
+  - 'Jeremy A. Wall <Jeremy@MarzhillStudios.com>'
+abstract: 'yet another templating system. Pure perl, highly flexible'
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
+  Carp: 0
   Exporter: 0
+build_requires:
   Test::MockObject: 1.08
   Test::More: 0.7
-  perl: 5.6
 provides:
   Bricklayer::Templater:
     file: lib/Bricklayer/Templater.pm
