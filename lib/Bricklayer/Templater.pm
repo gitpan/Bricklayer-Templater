@@ -73,7 +73,7 @@ of the template object.
 
 =cut
 
-$VERSION='0.9.5';
+$VERSION='0.9.6';
 
 sub new {
     do {carp($_[0]." Requires a working directory"); return; } unless defined $_[2];
@@ -155,7 +155,7 @@ sub run_sequencer {
 sub publish {
 	my $self = shift;
     my $stuff = shift;
-	$self->{_page} .= $stuff if $stuff;
+	$self->{_page} .= $stuff if defined $stuff;
 } 
 
 =head3 clear
