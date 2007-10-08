@@ -1,53 +1,21 @@
 ---
-name: Bricklayer-Templater
-version: 0.9.4
-author:
-  - 'Jeremy A. Wall <Jeremy@MarzhillStudios.com>'
 abstract: 'yet another templating system. Pure perl, highly flexible'
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  Carp: 0
-  Exporter: 0
+author: 'Jeremy A. Wall <Jeremy@MarzhillStudios.com>'
 build_requires:
   Test::MockObject: 1.08
   Test::More: 0.7
-provides:
-  Bricklayer::Templater:
-    file: lib/Bricklayer/Templater.pm
-    version: 0.9.4
-  Bricklayer::Templater::Handler:
-    file: lib/Bricklayer/Templater/Handler.pm
-  Bricklayer::Templater::Handler::common::arrayitem:
-    file: lib/Bricklayer/Templater/Handler/common/arrayitem.pm
-  Bricklayer::Templater::Handler::common::elsehashitem:
-    file: lib/Bricklayer/Templater/Handler/common/elsehashitem.pm
-  Bricklayer::Templater::Handler::common::hashitem:
-    file: lib/Bricklayer/Templater/Handler/common/hashitem.pm
-  Bricklayer::Templater::Handler::common::ifhashitem:
-    file: lib/Bricklayer/Templater/Handler/common/ifhashitem.pm
-  Bricklayer::Templater::Handler::common::include:
-    file: lib/Bricklayer/Templater/Handler/common/include.pm
-  Bricklayer::Templater::Handler::common::item:
-    file: lib/Bricklayer/Templater/Handler/common/item.pm
-  Bricklayer::Templater::Handler::common::object:
-    file: lib/Bricklayer/Templater/Handler/common/object.pm
-  Bricklayer::Templater::Handler::common::row:
-    file: lib/Bricklayer/Templater/Handler/common/row.pm
-  Bricklayer::Templater::Handler::default:
-    file: lib/Bricklayer/Templater/Handler/default.pm
-  Bricklayer::Templater::Handler::text_block:
-    file: lib/Bricklayer/Templater/Handler/text_block.pm
-  Bricklayer::Templater::Handler::util::embed:
-    file: lib/Bricklayer/Templater/Handler/util/embed.pm
-  Bricklayer::Templater::Handler::util::tester:
-    file: lib/Bricklayer/Templater/Handler/util/tester.pm
-  Bricklayer::Templater::Parser:
-    file: lib/Bricklayer/Templater/Parser.pm
-  Bricklayer::Templater::Sequencer:
-    file: lib/Bricklayer/Templater/Sequencer.pm
-generated_by: Module::Build version 0.2808
+distribution_type: module
+generated_by: Module::Install version 0.67
+license: perl
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
+name: Bricklayer-Templater
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Carp: 0
+  perl: 5.6.0
+version: 0.9.7

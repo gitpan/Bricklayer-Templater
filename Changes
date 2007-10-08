@@ -1,3 +1,60 @@
+Mon Oct  8 10:41:07 CDT 2007  jeremy@marzhillstudios.com
+  tagged V0.9.6
+
+Mon Oct  8 10:40:44 CDT 2007  jeremy@marzhillstudios.com
+  * up version to 0.9.6
+
+Fri Oct  5 20:00:36 CDT 2007  jeremy@marzhillstudios.com
+  * removed tester.pm as a tag handler module (it was stupid)
+
+Fri Oct  5 19:52:03 CDT 2007  jeremy@marzhillstudios.com
+  * all POD documentation tests pass and the documentation coverage is complete
+
+Thu Oct  4 21:22:29 CDT 2007  jeremy@marzhillstudios.com
+  * file cleanup and some POD tests are passing better now
+
+Mon Sep 10 19:34:51 CDT 2007  jeremy@marzhillstudios.com
+  tagged V0.9.6
+
+Mon Sep 10 19:34:10 CDT 2007  jeremy@marzhillstudios.com
+  * additional tests and a version increment
+
+Wed Aug 29 22:33:57 CDT 2007  jeremy@marzhillstudios.com
+  * bugfix for nested tags oops!!
+
+Wed Aug 29 22:33:24 CDT 2007  jeremy@marzhillstudios.com
+  * debugging flag for common::object handler
+
+Wed Aug 29 20:35:39 CDT 2007  jeremy@marzhillstudios.com
+  * up the Bricklayer version
+
+Wed Aug 29 20:34:58 CDT 2007  jeremy@marzhillstudios.com
+  * expand testing for the parser
+
+Wed Aug 29 20:34:00 CDT 2007  jeremy@marzhillstudios.com
+  * correctly handle tagid and start and end brackets in templater
+
+Wed Aug 29 20:33:39 CDT 2007  jeremy@marzhillstudios.com
+  * cleanup sequencer code
+
+Wed Aug 29 20:33:17 CDT 2007  jeremy@marzhillstudios.com
+  * clean up parser code
+
+Wed Aug 29 20:32:35 CDT 2007  jeremy@marzhillstudios.com
+  * correctly handle negation in the object handler
+
+Wed Aug 29 20:31:45 CDT 2007  jeremy@marzhillstudios.com
+  * Module::Install for Makefile instead of Module::Build
+
+Wed Aug 29 20:29:05 CDT 2007  jeremy@marzhillstudios.com
+  * MANIFEST changes
+
+Wed Aug 29 20:28:01 CDT 2007  jeremy@marzhillstudios.com
+  * cleanup the test files a bit
+
+Wed Aug 29 20:25:48 CDT 2007  jeremy@marzhillstudios.com
+  * correctly handle returned values from a tag handler
+
 Wed Aug 22 22:34:18 CDT 2007  jeremy@marzhillstudios.com
   * fixed some documentation and also the tests
 
