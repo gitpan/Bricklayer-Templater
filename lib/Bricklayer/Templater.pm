@@ -73,7 +73,7 @@ of the template object.
 
 =cut
 
-$VERSION='0.9.7';
+$VERSION='0.9.8';
 
 =head3 new
 
